@@ -16,26 +16,24 @@
 		<div class="container">
 			<div class="text-center">
     		<h1>Academic Demotivator</h1>
-        <h2>Hello, {{user.name}}</h2>
+        <h2>Hello, {{user.name}}.</h2>
     	</div>
 
     	<div>
     		<div class="container">
     			<div class="col-md-12 column list-group" data-bind="foreach:insults">
-    				
     				<div class="list-group-item">
     					<div>
-                            <strong data-bind="text:insultString"></strong>
-                            <span class="label label-default" data-bind="text:insultType"></span>
-                        </div>
+                <strong data-bind="text:insultString"></strong>
+                <span class="label label-default" data-bind="text:insultType"></span>
+              </div>
     				</div>
-    				
     			</div>
-                <p>
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newInsultModal">
-                      Add new insult
-                    </button>
-                </p> 
+          <p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newInsultModal">
+              Add new insult
+            </button>
+          </p>
     		</div>
     	</div>
     </div>
